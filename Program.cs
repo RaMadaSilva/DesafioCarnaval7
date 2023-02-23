@@ -26,6 +26,7 @@ class Program
         StringBuilder stringBuilder = new StringBuilder(); 
 
         //Construir a sequencia de fibonacci
+
         int[] fibonacci = new int[valor];
         fibonacci[0] = 0;
         fibonacci[1] = 1;
@@ -35,11 +36,11 @@ class Program
             fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
         }
         //iterar sobre os elementos da sequencia de fibonacci
+
         for (int i = 0; i < valor; i++)
         {
             for (int j = 0; j <= i; j++)
             {
-
                 stringBuilder.Append($"{fibonacci[j]}  ");
             }
             stringBuilder.Append("\n");
